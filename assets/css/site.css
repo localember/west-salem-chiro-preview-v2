@@ -361,6 +361,10 @@ p:last-child { margin-bottom: 0; }
   overflow: hidden;
   background: #fff;
 }
+/* Wider than the site wrap so the hero sits closer to the edges, like the live site (max 1500px, 20px gutters). */
+.hero .wrap {
+  width: min(100% - 40px, 1500px);
+}
 .hero__grid {
   display: grid;
   grid-template-columns: 1fr 1.05fr;
@@ -819,6 +823,7 @@ p:last-child { margin-bottom: 0; }
     white-space: nowrap;
   }
   .hero { padding: 16px 0 40px; }
+  .hero .wrap { width: min(100% - 32px, 1500px); }
   .hero__brand { margin: 8px auto 20px; }
   .hero__copy { text-align: left; }
   main .btn, .content .btn, .hero .btn, .cta .btn, .page-hero .btn { width: 100%; }
