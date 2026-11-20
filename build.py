@@ -280,11 +280,11 @@ def homepage():
           <a class="btn" href="{p}request/">Request an Appointment</a>
         </div>
         <div class="hero__visual">
-          <div class="hex hex--placeholder" role="img" aria-label="Photo placeholder: family photo coming">
-            <div>
-              <strong>Photo placeholder</strong>
-              <span>Family photo coming. New photos arrive next week.</span>
-            </div>
+          <div class="hex hex--photo">
+            <picture>
+              <source type="image/webp" srcset="{p}assets/images/eoriatti-family.webp">
+              <img src="{p}assets/images/eoriatti-family.jpg" alt="The Eoriatti family" width="1600" height="2053">
+            </picture>
           </div>
           <div class="hero__band" aria-hidden="true"></div>
         </div>
